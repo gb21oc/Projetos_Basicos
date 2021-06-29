@@ -28,7 +28,37 @@ export default class Calculator extends Component{
     }
 
     setOperation(operation){
-        console.log(operation);
+       if(this.state.current === 0){
+            this.setState({operation, current: 1, clearDisplay: true});  
+            // recebe a operação, mudo o estado do current com isso começo a popular na segunda posição do array
+            // defino o clearDisplay como true para poder limpar o layout
+       }else{
+           const equals = operation === "=";
+           const currentOperation = this.state.operation;
+           const values = [...this.state.values];
+           try{
+                values[0] = eval(`${values[0]} ${currentOperation} ${values[1]}`);
+           }catch(e){
+                values[0] = this.state.values[0];
+           }
+           
+           values[1] = 0;
+           this.setState({
+               displayValue: values[0], 
+               operation: equals ? null : operation,
+               current: equals ? 0 : 1,
+               clearDisplay: !equals,
+               values
+            });
+       }
+    //    console.log(this.state.operation);
+    //    if(this.state.operation === "="){
+    //         const num1 = parseFloat(this.state.values[0]);
+    //         const num2 = parseFloat(this.state.values[1]);
+    //         const result = num1 + num2;
+    //         this.setState({displayValue: result});
+    //         console.log(result);
+    //    }
     }
 
     addDigit(n){
@@ -41,9 +71,9 @@ export default class Calculator extends Component{
        this.setState({displayValue, clearDisplay: false});
        if(n != "."){
             const i = this.state.current;
-            const newValue = parseFloat(displayValue);
-            const values = [...this.state.values];
-            values[i] = newValue;
+            const newValue = parseFloat(displayValue); // fiz o casting pois o valor esta vindo com string
+            const values = [...this.state.values]; //fiz um clone do array
+            values[i] = newValue;  //aqui eu falo que a primeira posição do array vai receber o valor digitado
             this.setState({values});
             console.log(values);
        }
