@@ -13,7 +13,7 @@
 <p>In this repository will be my basic projects, the projects will be divided by language and their explanation below!</p>
 
 ### Linguagens utilizadas(Languages used)
-O projeto ainda estão em desenvolvimento e por isso esse repositorio sempre será atualizado
+O projeto ainda estão em desenvolvimento e por isso esse repositorio sempre será atualizado.
 
 <details open="open">
   <summary>Linguagens utilizadas:</summary>
