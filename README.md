@@ -13,5 +13,18 @@
 <p>In this repository will be my basic projects, the projects will be divided by language and their explanation below!</p>
 
 ### Linguagens utilizadas(Languages used)
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
+O projeto ainda estão em desenvolvimento e por isso esse repositorio sempre será atualizado
+
+<details open="open">
+  <summary>Linguagens utilizadas:</summary>
+  <ol>
+    <li>
+      <p>React</p>
+      <ul>
+        <li<p>Calculadora: <strong> Em Desenvolvimento </strong></p></li>
+      </ul>
+    </li>
+  </ol>
+</details>
+
 
