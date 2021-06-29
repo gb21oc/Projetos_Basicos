@@ -1,0 +1,15 @@
+C:\Users\bielj\source\repos\Calculadora\bin\Release\netcoreapp3.1\Calculadora.exe
+C:\Users\bielj\source\repos\Calculadora\bin\Release\netcoreapp3.1\Calculadora.deps.json
+C:\Users\bielj\source\repos\Calculadora\bin\Release\netcoreapp3.1\Calculadora.runtimeconfig.json
+C:\Users\bielj\source\repos\Calculadora\bin\Release\netcoreapp3.1\Calculadora.runtimeconfig.dev.json
+C:\Users\bielj\source\repos\Calculadora\bin\Release\netcoreapp3.1\Calculadora.dll
+C:\Users\bielj\source\repos\Calculadora\bin\Release\netcoreapp3.1\Calculadora.pdb
+C:\Users\bielj\source\repos\Calculadora\obj\Release\netcoreapp3.1\Calculadora.csprojAssemblyReference.cache
+C:\Users\bielj\source\repos\Calculadora\obj\Release\netcoreapp3.1\Calculadora.Calculadora.resources
+C:\Users\bielj\source\repos\Calculadora\obj\Release\netcoreapp3.1\Calculadora.csproj.GenerateResource.cache
+C:\Users\bielj\source\repos\Calculadora\obj\Release\netcoreapp3.1\Calculadora.AssemblyInfoInputs.cache
+C:\Users\bielj\source\repos\Calculadora\obj\Release\netcoreapp3.1\Calculadora.AssemblyInfo.cs
+C:\Users\bielj\source\repos\Calculadora\obj\Release\netcoreapp3.1\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\bielj\source\repos\Calculadora\obj\Release\netcoreapp3.1\Calculadora.dll
+C:\Users\bielj\source\repos\Calculadora\obj\Release\netcoreapp3.1\Calculadora.pdb
+C:\Users\bielj\source\repos\Calculadora\obj\Release\netcoreapp3.1\Calculadora.genruntimeconfig.cache
