@@ -4,28 +4,75 @@ import "./Calculator.css";
 import Button from "../components/Button/Button";
 import Display from "../components/Display/Display";
 
+const initialState = {
+    displayValue: "0",
+    clearDisplay: false,
+    operation: null,
+    values: [0, 0],
+    current: 0
+}
+
 export default class Calculator extends Component{
+
+    state = {...initialState}
+
+    constructor(props){
+        super(props);
+        this.clearMemory = this.clearMemory.bind(this)
+        this.setOperation = this.setOperation.bind(this)
+        this.addDigit = this.addDigit.bind(this)
+    }
+
+    clearMemory(){
+        this.setState({...initialState})
+    }
+
+    setOperation(operation){
+        console.log(operation);
+    }
+
+    addDigit(n){
+       if(n === "." && this.state.displayValue.includes(".")){ // Se o 'n' for identico ao '.' e o user já tiver colocado esse ponto ele não ira deixar
+            return;
+       }
+       const clearDisplay = this.state.displayValue === "0" || this.state.clearDisplay;  //ou ele vai limpar quando o digito for 0 ou quando o var 'clearDisplay' for true
+       const currentValue = clearDisplay ? "" : this.state.displayValue;
+       const displayValue = currentValue + n;
+       this.setState({displayValue, clearDisplay: false});
+       if(n != "."){
+            const i = this.state.current;
+            const newValue = parseFloat(displayValue);
+            const values = [...this.state.values];
+            values[i] = newValue;
+            this.setState({values});
+            console.log(values);
+       }
+    }
+
+
     render(){
+        // const addDigit = n => this.addDigit(n);  click={() => this.clearMemory()} resolvendo o problema do this
+        // const setOperation = op => this.setOperation(op); click={() => this.clearMemory()} resolvendo o problema do this
         return (
             <div className="calculator">
-                <Display value={100}></Display>
-                <Button label="AC"></Button>
-                <Button label="/"></Button>
-                <Button label="7"></Button>
-                <Button label="8"></Button>
-                <Button label="9"></Button>
-                <Button label="*"></Button>
-                <Button label="4"></Button>
-                <Button label="5"></Button>
-                <Button label="6"></Button>
-                <Button label="-"></Button>
-                <Button label="1"></Button>
-                <Button label="2"></Button>
-                <Button label="3"></Button>
-                <Button label="+"></Button>
-                <Button label="0"></Button>
-                <Button label="."></Button>
-                <Button label="="></Button>
+                <Display value={this.state.displayValue}></Display>
+                <Button label="AC" click={this.clearMemory} triple></Button> {/* click={() => this.clearMemory()} resolvendo o problema do this*/}
+                <Button label="/" click={this.setOperation} operation></Button>
+                <Button label="7" click={this.addDigit}></Button>
+                <Button label="8" click={this.addDigit}></Button>
+                <Button label="9" click={this.addDigit}></Button>
+                <Button label="*" click={this.setOperation} operation></Button>
+                <Button label="4" click={this.addDigit}></Button>
+                <Button label="5" click={this.addDigit}></Button>
+                <Button label="6" click={this.addDigit}></Button>
+                <Button label="-" click={this.setOperation} operation></Button>
+                <Button label="1" click={this.addDigit}></Button>
+                <Button label="2" click={this.addDigit}></Button>
+                <Button label="3" click={this.addDigit}></Button>
+                <Button label="+" click={this.setOperation} operation></Button>
+                <Button label="0" click={this.addDigit} double></Button>
+                <Button label="." click={this.addDigit}></Button>
+                <Button label="=" click={this.setOperation} operation></Button>
             </div>
         );
     }
