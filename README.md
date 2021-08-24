@@ -21,7 +21,13 @@ O projeto ainda estão em desenvolvimento e por isso esse repositorio sempre ser
     <li>
       <p>React</p>
       <ul>
-        <li<p>Calculadora: <strong> Em Desenvolvimento </strong></p></li>
+        <li<p>Calculadora: <strong> Concluido! :) </strong></p></li>
+      </ul>
+    </li>
+    <li>
+      <p>C#</p>
+      <ul>
+        <li<p>Calculadora: <strong> Concluido! :)</strong></p></li>
       </ul>
     </li>
   </ol>
