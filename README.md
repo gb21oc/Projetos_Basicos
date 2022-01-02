@@ -21,13 +21,28 @@ O projeto ainda estão em desenvolvimento e por isso esse repositorio sempre ser
     <li>
       <p>React</p>
       <ul>
-        <li<p>Calculadora: <strong> Concluido! :) </strong></p></li>
+        <li<p>Calculadora: <strong>Uma calculadora simples feita em Windows Forms</strong></p></li>
       </ul>
     </li>
     <li>
       <p>C#</p>
       <ul>
-        <li<p>Calculadora: <strong> Concluido! :)</strong></p></li>
+        <li<p>Calculadora: <strong>Uma calculadora simples feita em Windows Forms</strong></p></li>
+      </ul>
+      <ul>
+        <li<p>PersonRest: <strong>Uma API feita em .NET 6.0 para cadastro de pessoas com uma documentação no swagger e utilizando como banco de dados o MySql</strong></p></li>
+      </ul>
+    </li>
+    <li>
+      <p>Python</p>
+      <ul>
+        <li<p>Create_Print: <strong>Script para "simular" a função padrao do python chamada "print()"</strong></p></li>
+      </ul>
+      <ul>
+        <li<p>Rock_Paper_Scissors: <strong>Criei um script que irá realizar o famoso jogo "pedra, papel ou tesou" nele sera possivel escolher uma das 3 opções e como adversario será o proprio script, ganha quem chegar a 3 ponto primeiro </strong></p></li>
+      </ul>
+      <ul>
+        <li<p>WebRecon: <strong>Script que ira realizar um simple 'recon'(reconhecimento) da url informada, ele ira tentar recuperar o server, linguagem, http_method, irá procurar por documentos anexados na url, procurar por IndexOf, recuperar informaçoes no Whois, procurar por links e diretorios no site, procurar por CVE referente ao servidor.</strong></p></li>
       </ul>
     </li>
   </ol>
