@@ -64,7 +64,7 @@ class Recon:
             print(f"[-] An error has occurred: {err}")
         finally:
             input("[+] Press enter to exit...")
-            exit()
+            exit(0)
 
     def infoUrl(self, url):
         try:
