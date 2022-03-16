@@ -1,3 +1,3 @@
-node_modules/
-
-config.js
+Node/SimpleCRUD/node_modules
+Node/SimpleCRUD/Node/packages
+Node/SimpleCRUD/config.js
