@@ -45,6 +45,18 @@ O projeto ainda estão em desenvolvimento e por isso esse repositorio sempre ser
         <li<p>WebRecon: <strong>Script que ira realizar um simple 'recon'(reconhecimento) da url informada, ele ira tentar recuperar o server, linguagem, http_method, irá procurar por documentos anexados na url, procurar por IndexOf, recuperar informaçoes no Whois, procurar por links e diretorios no site, procurar por CVE referente ao servidor.</strong></p></li>
       </ul>
     </li>
+    <li>
+      <p>PHP</p>
+      <ul>
+        <li<p>AppHelpDesk: <strong>Sistema local que guardar chamados em um arquivo '.hd', bem simples e sem conexão com banco de dados</strong></p></li>
+      </ul>
+    </li>
+    <li>
+      <p>Node</p>
+      <ul>
+        <li<p>SimpleAPICrud: <strong>Api basica criada em Node que utiliza como banco de dados o MongoDB.</strong></p></li>
+      </ul>
+    </li>
   </ol>
 </details>
 
