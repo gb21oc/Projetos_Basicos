@@ -1,0 +1,19 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "Um api basica que realiza um CRUD em um sistema de login e como banco de dados o MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel Jose",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.5",
+    "nodemon": "^2.0.15",
+    "to": "^0.2.9",
+    "update": "^0.7.4"
+  }
+}
