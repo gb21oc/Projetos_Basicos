@@ -22,4 +22,4 @@ app.use(express.urlencoded({extended:false}));
 app.use("/user", createUser)
 
 
-app.listen(80, ()=> { console.log("[*] Servidor Rodando") })
+app.listen(80, ()=> { console.log("[*] Server running.") })

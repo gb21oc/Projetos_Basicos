@@ -7,6 +7,8 @@ exports.post = async(req, res, next) => {
     try{
         if(Object.keys(req.body).length === 0) return res.status(400).send({message: "It is not possible to complete the action without sending the data."})
         const {name, email, passwd, age, sex} = req.body
+        const verifyUserEmail = await repository.verifyEmail(email)
+        if (verifyUserEmail) return res.status(500).send({message: "This e-mail has already registered"})
         let validate = new validation()
         validate.hasMaxLength(passwd, 16, "The password has exceeded the allowed size.")
         validate.hasMinLength(passwd, 8, "The password has to have at least 8 characters.")
@@ -28,6 +30,7 @@ exports.post = async(req, res, next) => {
         return res.status(200).send({message: "User registration in the system successfully!"})
     }catch(err){
         console.log("Deu erro: " + err)
+        if(err.message.indexOf("E11000") != -1) return res.status(500).send({message: "This e-mail has already registered"})
         return res.status(500).send({message: err.message})
     }
 }
