@@ -5,6 +5,7 @@ const config        = require("./config")
 const database      = require("./database/dataBaseConnection")
 const userSchema    = require("./model/UserSchema")
 const createUser    = require("./router/routeCreateUser")
+const userLogon     = require("./router/routeUserLogon")
 
 // Mitigating Prototype Pollution 
 Object.freeze(Object.prototype);
@@ -20,6 +21,7 @@ app.use(express.urlencoded({extended:false}));
 
 //Endpoint Create User
 app.use("/user", createUser)
+app.use("/", userLogon)
 
 
 app.listen(80, ()=> { console.log("[*] Server running.") })

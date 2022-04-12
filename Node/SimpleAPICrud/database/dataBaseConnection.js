@@ -9,7 +9,5 @@ const connectingDatabase = async() => {
     }).catch((err) => {
         console.log("[-] An error occurred while connecting to the database: " + err)
     })
-
-
 }
 connectingDatabase()
