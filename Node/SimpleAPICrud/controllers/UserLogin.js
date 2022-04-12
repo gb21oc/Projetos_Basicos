@@ -40,7 +40,6 @@ exports.post = async(req, res, next) => {
         
     }catch(err){
         console.log("Deu erro: " + err)
-        if(err.message.indexOf("E11000") != -1) return res.status(500).send({message: "This e-mail has already registered"})
         if(err.message.indexOf("10000ms") != -1) return res.status(500).send({message: "Timeout, try again"})
         return res.status(500).send({message: "Failure to process the request"})
     }
